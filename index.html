@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Volvex Tennis – beltéri teniszpályák és edzések Dunakeszin</title>
+  <meta name="description" content="Négy beltéri REBOUND ACE® teniszpálya Dunakeszin, nyitva minden nap 7–22 óráig. Online pályafoglalás, gyerek és felnőtt edzésprogramok, bérletek.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F2F0EB">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,300..900;1,100..125,300..900&family=Geist+Mono:wght@400;500;600;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,700..900&display=swap">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="site/site.css">
+</head>
+<body class="site" data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot-live"></span><span><b>Dunakeszi</b> · beltéri csarnok · minden nap <span class="js-hours">7–22</span></span></p>
+          <h1 class="h-display">
+            <span class="l1"><span class="w" style="--i:0">Több</span> <span class="w" style="--i:1">mint</span></span>
+            <span class="l2"><span class="w" style="--i:2">tenisz</span><span class="ball-dot" aria-hidden="true"></span></span>
+          </h1>
+          <p class="lead">Négy beltéri REBOUND ACE® pálya – télen-nyáron ugyanazzal a játékélménnyel. Foglalj pályát pár kattintással, vagy hozd el a gyereket edzésre.</p>
+          <div class="cta-row">
+            <a class="btn-xl primary" href="foglalas/index.html">Pályát foglalok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn-xl ghost" href="#programok">Edzésprogramok</a>
+          </div>
+          <ul class="facts" id="facts"></ul>
+        </div>
+        <div class="board-wrap">
+          <div class="board" id="board" aria-label="Szabad pályák élőben"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ================= FOGLALÁS ================= -->
+    <section class="sec" id="foglalas">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>01</b> / Pályafoglalás</p>
+          <h2 class="h2 rv">Három lépés,<br><em>és már</em> játszol.</h2>
+          <p class="sec-intro rv">Nincs telefonálgatás és várakozás: élőben látod, melyik pálya szabad, és azonnal le is foglalhatod. A számlát automatikusan küldjük.</p>
+        </div>
+        <div class="steps">
+          <div class="step rv" style="--d:0"><span class="step-n">LÉPÉS 01</span><span class="step-ic" id="ic-1"></span>
+            <h3>Válassz napot és pályát</h3><p>Nézd meg, mi szabad, és jelöld ki az órát – akár többet is egymás után.</p></div>
+          <div class="step rv" style="--d:1"><span class="step-n">LÉPÉS 02</span><span class="step-ic" id="ic-2"></span>
+            <h3>Lépj be az e-mail címeddel</h3><p>Nem kell jelszót megjegyezned. A számlázási adatokat elég egyszer megadni.</p></div>
+          <div class="step rv" style="--d:2"><span class="step-n">LÉPÉS 03</span><span class="step-ic" id="ic-3"></span>
+            <h3>Fizess, és kész</h3><p>Bankkártyával, bérlettel vagy a helyszínen. Lemondani <span class="js-cancel">24</span> óráig díjmentes.</p></div>
+        </div>
+        <div class="book-band rv">
+          <div><h3>Ma még <span id="free-today">—</span> szabad időpont.</h3><p>Nézd meg a teljes heti naptárat, és foglalj most.</p></div>
+          <a class="btn-xl ball" href="foglalas/index.html">Foglalási naptár <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMOK ================= -->
+    <section class="sec" id="programok">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>02</b> / Programok</p>
+          <h2 class="h2 rv">Négyévestől<br><em>a versenyzőig.</em></h2>
+          <p class="sec-intro rv">Képzett, versenyzői múlttal rendelkező edzők, kis létszámú csoportok és korosztályonként felépített programok – gyerekeknek és felnőtteknek.</p>
+        </div>
+        <div class="progs" id="progs"></div>
+        <div class="more-svc rv" id="more-svc"></div>
+      </div>
+    </section>
+
+    <!-- ================= ÁRAK ================= -->
+    <section class="sec" id="arak">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>03</b> / Árak és bérletek</p>
+          <h2 class="h2 rv">Egyszerű,<br><em>átlátható</em> árak.</h2>
+          <p class="sec-intro rv">Óradíj pályánként – nem számít, hányan játszotok. Rendszeres játékra bérletet vagy állandó heti időpontot ajánlunk.</p>
+        </div>
+        <div class="prices">
+          <div class="price-card rv" id="price-court"></div>
+          <div class="passes" id="passes"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDZŐK ================= -->
+    <section class="sec" id="edzok">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>04</b> / Edzőink</p>
+          <h2 class="h2 rv">Akiktől<br><em>tanulni fogsz.</em></h2>
+          <p class="sec-intro rv">Volt profi és válogatott játékosok, testnevelő tanárok és minősített utánpótlás-edzők – mindannyian a pályán töltik a napjukat.</p>
+        </div>
+        <div class="coaches" id="coaches"></div>
+      </div>
+    </section>
+
+    <!-- ================= GYIK ================= -->
+    <section class="sec" id="gyik">
+      <div class="wrap faq-grid">
+        <div>
+          <p class="eyebrow rv"><b>05</b> / Gyakori kérdések</p>
+          <h2 class="h2 rv" style="margin-top:22px">Kérdésed<br><em>van?</em></h2>
+        </div>
+        <div class="faq rv" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- ================= KAPCSOLAT ================= -->
+    <section class="sec" id="kapcsolat">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow rv"><b>06</b> / Kapcsolat</p>
+          <h2 class="h2 rv">Gyere el<br><em>játszani.</em></h2>
+          <p class="sec-intro rv">A csarnok Dunakeszin, könnyen megközelíthető helyen van. Ha bármi kérdésed van, írj vagy hívj bátran.</p>
+        </div>
+        <div class="contact" id="contact"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="shared/store.js"></script>
+  <script src="shared/ui.js"></script>
+  <script src="shared/court.js"></script>
+  <script src="site/chrome.js"></script>
+  <script src="site/site.js"></script>
+</body>
+</html>
